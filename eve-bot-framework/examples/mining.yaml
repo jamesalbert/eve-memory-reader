@@ -1,0 +1,30 @@
+{
+  "name": "EVE Online - Mining Bot",
+  "uses": "MiningBot",
+  "with_narration": true,
+  "focus": true,
+  "loop": true,
+  "start_from": "mine_asteroids",
+  "scanners": [
+    "EnemyScanner"
+  ],
+  "args": {
+    "deploy_drones_while_mining": true,
+    "station": "Ikuchi VI - Moon 15 - Ytiri Storage",
+    "number_of_miners": 2,
+    "shields": "ALT1",
+    "fleet_commander": "Tacos Los Toritos",
+    "asteroids_of_interest": [
+        "Veldspar",
+        "Scordite"
+    ]
+  },
+  "steps": [
+    "fleetup",
+    "mine_asteroids",
+    "compress"
+  ],
+  "emergency_steps": [
+    "warp_to_station"
+  ]
+}

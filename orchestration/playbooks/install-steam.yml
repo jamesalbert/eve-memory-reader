@@ -1,0 +1,8 @@
+- name: install steam
+  hosts: all
+  tasks:
+
+  - name: Install Steam
+    ansible.windows.win_package:
+      path: https://www.eveonline.com/EveLauncher-2068569.exe
+      arguments: /install /passive /norestart
