@@ -36,6 +36,6 @@ The flask server is used to capture pause, stop, and healthcheck events that can
 
 The UI window is used for end-user ease of use. Click browse, use one of the examples to get started.
 
-That's pretty much it. When you tell start the bot, it will switch to the Eve window and perform actions.
+That's pretty much it. When you start the bot, it will switch to the Eve window and perform actions.
 
 tbd: in-depth documentation
