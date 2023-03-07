@@ -14,5 +14,18 @@ There are also 2 additional folders:
 - eve-memory-reader-test: a simple invocation of eve-memory-reader so that we can perform memory leak analysis, code coverage, general testing.
 - orchestration: a minimal setup for standing up a windows machine with steam installed using Vagrant and Ansible.
 
+## Installation
+
+```
+# build the dll
+nuget restore .
+msbuild /m /p:Configuration=Release .
+
+# build the exe
+pip install -r eve-bot-framework/requirements.txt
+pyinstaller --clean --onefile --name="eve-bot-application" --paths ".\eve-bot-framework" --add-data=".\x64\Release\eve-memory-reader.dll;." .\eve-bot-framework\app\app.py
+```
+
+You should now be able to run `./dist/eve-bot-application.exe`
 
 tbd: in-depth documentation
