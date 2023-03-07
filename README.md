@@ -7,6 +7,7 @@ This project is split into 2 parts:
 - eve-bot-framework: written in Python, provides a few things:
   - a high-level entrypoint for bots (written in yaml, and by that logic also json). Check here for [some examples](https://github.com/jamesalbert/eve-memory-reader/tree/main/eve-bot-framework/examples)
   - a UI for loading these bot configurations in
+  - send you SMS messages when certain events occur
 
 
 There are also 2 additional folders:
