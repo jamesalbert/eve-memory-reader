@@ -1,6 +1,6 @@
 # eve-memory-reader
 
-This is mostly a passion project inspired by https://github.com/Arcitectus/Sanderling with the aim of being faster and use more memory efficient.
+This is mostly a passion project inspired by https://github.com/Arcitectus/Sanderling with the aim of being faster and more memory efficient.
 
 This project is split into 2 parts:
 - eve-memory-reader: written in C, performs all the memory crawling and resolving tasks, returns json-like responses (UI components) to the caller
